@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Hayes Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/f8d50cbe91.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init("GGimt4Uzyq8T5Zhzn");
+    })();
+    </script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <nav>
+        <img class="personal__logo" src="./assets/logo.svg" />
+        
+        <ul class="nav__link--list">
+            <li class="nav__link">
+                <a href="#about" class="
+                nav__link--anchor
+                link__hover-effect
+                ">About</a> 
+            </li>
+            <li class="nav__link">
+                <a href="#projects" class="
+                nav__link--anchor
+                link__hover-effect
+                ">Projects</a> 
+            </li>
+            <li class="nav__link">
+                <a href="#contact" class="
+                nav__link--anchor
+                nav__link--anchor-primary
+                " onclick="toggleModal()">contact</a> 
+            </li>
+            <li class="nav__link" onclick="toggleContrast()">
+                <a href="#" class="
+                nav__link--anchor
+                link__hover-effect
+                "><i class="fa fa-circle-half-stroke"></i></a> 
+            </li>
+        </ul>
+    </nav>
+    <main>
+       <a href="#">
+           <button class="btn__mail click" onclick="toggleModal()"><i class="fa fa-envelope btn__mail--white"></i></button>
+       </a> 
+        <section id="about-me" class="felx flex-1" onmousemove="moveBackground(event)">
+            <div class="about-me__info row"> 
+                <div class="about-me__info--container">
+                    <figure class="about-me__picture--mask">
+                        <img src="./assets/me.jpeg" alt="A photo of me." class="about-me__img">
+                    </figure>
+                    <h1 class="about-me__info--title">
+                        Hey, I'm <span class="text--accent">Chris Hayes</span>
+                    </h1>
+                    <p class="about-me__info--para">I'm a <strong class="text--accent">Frontend Software Engineer</strong> with a strong passion for building beautiful, functional, responsive and preformant web applications with great user experiences. Here's a <b class="text--accent click" onclick="toggleModal()">bit more about me.</b> </p>
+                </div>
+                <div class="about-me__links flex">
+                    <a href="https://www.linkedin.com/in/chris-hayes-a3372a158/" class="about-me__link" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.github.com/c-hayes" class="about-me__link" target="_blank"> <i class="fab fa-github"></i></a>
+                    <a href="mailto:chayes.editing@gmail.com" class="about-me__link" target="_blank"> <i class="fas fa-envelope"></i></a>
+                    <a href="./assets/Example Resume.pdf" class="about-me__link" target="_blank" > <i class="fas fa-file-pdf"></i></a>
+                </div>
+            </div>
+            <a href="#projects" class="scroll">
+                <div class="scroll__icon click"></div>
+              </a>
+              <div class="modal">
+                <div class="modal__half modal__about">
+                    <h3 class="modal__title modal__title--about">A bit about me...</h3>
+                    <h4 class="modal__subitle modal__subtitle--about">Frontend Sotware Engineer</h4>
+                    <p class="modal__para">I'm a 39 year old, American, <b class="text--accent"> Frontend sotware developer</b> from Colorado with a storng passion for developing new websites and modernizing legacy sites with great <b class="text--accent"> user experiences.</b> </p>
+                    <p class="modal__para">I am <b class="text--accent">constantly learning </b> and working with extremely challenging problems.  I am learning from a wonderfully <b class="text--accent">talented and experienced </b> team of developers every day.</p>
+                    <div class="language__list">
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png" alt="HTML5 Icon" class="language__img">
+                            </figure>
+                                <span class="language__name">HTML 5</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png" alt="CSS3 Icon" class="language__img">
+                            </figure>
+                            <span class="language__name">CSS 3</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/javascript_icon_130900.png" alt="Javascript Icon" class="language__img">
+                            </figure>
+                            <span class="language__name">Javascript</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_logo_icon_146374.png" alt="React Icon" class="language__img">
+                            </figure>
+                            <span class="language__name">React</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_ruby_icon_130186.png" alt="Ruby Icon" class="language__img">
+                            </figure>
+                            <span class="language__name">Ruby</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/rails_plain_logo_icon_146376.png" alt="Ruby on Rails Icon" class="language__img">
+                            </figure>
+                            <span class="language__name">Ruby on Rails</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__half modal__contact">
+                    <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+
+                    <h3 class="modal__title modal__title--contact"> Let's Chat</h3>
+                    <h4 class="modal__subitle modal__subtitle--contact">I'm currently open to new opportunities.</h4>
+                    <form id="contact__form" onsubmit="contact(event)">
+                        <div class="form__item">
+                            <label class="form__item--label">Name</label>
+                            <input class="input" name="user_name" type="text" required></input>
+                          </div>
+                          <div class="form__item">
+                            <label class="form__item--label">Email</label>
+                            <input class="input" name="user_email" type="email" required></input>
+                          </div>
+                          <div class="form__item">
+                            <label class="form__item--label">Message</label>
+                            <textarea class="input" name="message" type="text" required></textarea>
+                          </div>
+                          <button id="contact__submit" class="form__submit">
+                            Send it my way
+                          </button>
+                    </form>
+                    <div class="modal__overlay modal__overlay--loading">
+                        <i class="fas fa-spinner logo--white"></i>
+                    </div>
+                    <div class="modal__overlay modal__overlay--success">
+                        Thanks for reaching out.  I look forward to talking with you soon!
+                    </div>
+
+                </div>
+              </div>
+            <img src="./assets/semi circle.svg" class="shape shape--0">
+            <img src="./assets/circle.svg" class="shape shape--1">
+            <img src="./assets/squiggly.svg" class="shape shape--2">
+            <img src="./assets/triangle.svg" class="shape shape--3">
+            <img src="./assets/semi circle.svg" class="shape shape--4">
+            <img src="./assets/circle.svg" class="shape shape--5">
+            <img src="./assets/squiggly.svg" class="shape shape--6">
+            <img src="./assets/triangle.svg" class="shape shape--7">
+            <img src="./assets/semi circle.svg" class="shape shape--8">
+            
+
+        </section>
+        <!-- <section id="languages" class="hide">
+            <div class="container">
+                <div class="row">
+                    <h1 class="section__title">This is my <span class="text--accent">
+                        Technology Stack</span></h1>
+                    <div class="language__list">
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png" alt="HTML5 Icon" class="language__img">
+                            </figure>
+                                <span class="language__name">HTML 5</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png" alt="CSS3 Icon" class="language__img">
+                            </figure>
+                            <span class="language__name">CSS 3</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/javascript_icon_130900.png" alt="Javascript Icon" class="language__img">
+                            </figure>
+                            <span class="language__name">Javascript</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_logo_icon_146374.png" alt="React Icon" class="language__img">
+                            </figure>
+                            <span class="language__name">React</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_ruby_icon_130186.png" alt="Ruby Icon" class="language__img">
+                            </figure>
+                            <span class="language__name">Ruby</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/rails_plain_logo_icon_146376.png" alt="Ruby on Rails Icon" class="language__img">
+                            </figure>
+                            <span class="language__name">Ruby on Rails</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section id="projects">
+            <div class="container">
+                <div class="row">
+                    <h1 class="section__title">Here are some of my <span class="text--accent"> Projects</span></h1>
+                    <ul class="project__list">
+                        <li class="project">
+                            <div class="project__wrapper">
+                                <img src="./assets/loopit.png" alt="" class="project__img">
+                                <div class="project__description">
+                                    <h3 class="project__description--title">Sales Project</h3>
+                                    <h4 class="project__desctiption--subtitle">Ruby, RoR, JS</h4>
+                                    <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet est repellat debitis consequuntur eum tenetur, aperiam, consequatur sunt pariatur quam sint provident iusto numquam voluptatum!</p>
+                                    <div class="project__description--links">
+                                        <a href="github.com" target="_blank" class="project__description--link">
+                                            <i class="fab fa-github text--accent"></i>
+                                        </a>
+                                        <a href="websitelink.com" target="_blank" class="project__description--link">
+                                            <i class="fas fa-link text--accent"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project">
+                            <div class="project__wrapper">
+                                <img src="./assets/loopit.png" alt="" class="project__img">
+                                <div class="project__description">
+                                    <h3 class="project__description--title">Sales Project</h3>
+                                    <h4 class="project__desctiption--subtitle">Ruby, RoR, JS</h4>
+                                    <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet est repellat debitis consequuntur eum tenetur, aperiam, consequatur sunt pariatur quam sint provident iusto numquam voluptatum!</p>
+                                    <div class="project__description--links">
+                                        <a href="github.com" target="_blank" class="project__description--link">
+                                            <i class="fab fa-github text--accent"></i>
+                                        </a>
+                                        <a href="websitelink.com" target="_blank" class="project__description--link">
+                                            <i class="fas fa-link text--accent"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="row">
+            <a href="#" class="footer__anchor">
+                <figure>
+                    <img src="./assets/logo.svg" alt="Chris Hayes Logo" class="logo--white">
+                </figure>
+                <span class="footer__anchor--popper">
+                    Top
+                    <i class="fas fa-arrow-up"></i>
+                </span>
+            </a>
+            <div class="footer__social--list">
+                <a href="https://www.github.com/c-hayes" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white"
+                target="_blank"
+                >Github</a>
+           
+                <a href="https://www.linkedin.com/in/chris-hayes-a3372a158/" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white"
+                target="_blank"
+                >LinkedIn</a>
+           
+                <a href="mailto:chayes.editing@gmail.com" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white"
+                target="_blank"
+                >Email</a>
+           
+                <a href="#" onclick="toggleModal()" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white"
+                >Contact</a>
+            </div>
+            <p>Copyright ©2022 Chris Hayes</p>
+        </div>
+    </footer>
+
+</body>
+</html>
