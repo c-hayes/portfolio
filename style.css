@@ -788,7 +788,6 @@ Shapes
 }
 
 /*  for small phones -tablets - large smartphones */
-<<<<<<< HEAD
 @media (max-width: 768px) {
   nav {
     height: 68px;
@@ -826,6 +825,10 @@ Shapes
   .modal__half {
     width: 100%;
     border-radius: 0;
+  }
+  .text--accent{
+    color: white;
+    text-shadow: none;
   }
 }
 /*  smaller phones */
@@ -867,97 +870,8 @@ Shapes
   .modal__half {
     padding: 40px;
   }
+  .text--accent{
+    color: white;
+    text-shadow: none;
+  }
 }
-=======
-@media (max-width: 768px){
-    nav{
-        height: 68px;
-    }
-    h1{
-        font-size: var(--font-lg);
-        }
-    .about-me__info--para{
-        font-size: var(--font-med); 
-        }
-    .language{
-        width: 50%;
-    }
-    .language__list{
-        justify-content: center;
-    }
-    .project__description--para{
-        font-size: var(--font-sm);
-        }
-    .project__description{
-        padding-right: 30px;
-        left: 30px;
-    }
-    .personal__logo{
-        max-height: 80%;
-    }
-    .modal {
-        top: 0;
-        left: 0;
-        width: 100%;
-        transform: none;
-        height: auto;
-        flex-direction: column-reverse;
-    }
-    .modal__half{
-        width: 100%;
-        border-radius: 0;
-    }
-    .text--accent{
-        color: #242424;
-    }
-    .dark-theme .text--accent{
-        color: white
-    }
-}
-/*  smaller phones */
-@media (max-width: 480px){
-    .nav__link:first-child{
-        display: none;
-    }
-    h1{
-        font-size: var(--font-lg);
-        }
-    .about-me__info--para{
-        font-size: var(--font-med); 
-        margin: 40px;
-        }
-    .project__description--para{
-        display: none;
-    }
-    .project__description--links{
-        display: flex;
-        justify-content: center;
-    }
-    .project__description--title, .project__desctiption--subtitle{
-        text-align: center;
-    }
-    .project__description--title{
-        font-size: var(--font-med);
-        }
-    .project__description{
-        left:0;
-        width: 100%;
-    }
-    .project {
-        margin-bottom: 30px;
-
-    }
-    .project__wrapper{
-        box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
-    }
-    .modal__half{
-        padding: 40px;
-    }
-    .text--accent{
-        color: #242424;
-    }
-    .dark-theme .text--accent{
-        color: white
-    }
-}
->>>>>>> 8baa258de80106da68e3b859cb8a5044b49dece7
