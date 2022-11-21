@@ -826,9 +826,11 @@ Shapes
     width: 100%;
     border-radius: 0;
   }
-  .text--accent{
+  .dark-theme .text--accent{
     color: white;
     text-shadow: none;
+    font-style: italic;
+    font-weight: 700;
   }
 }
 /*  smaller phones */
@@ -870,8 +872,11 @@ Shapes
   .modal__half {
     padding: 40px;
   }
-  .text--accent{
+
+  .dark-theme .text--accent{
     color: white;
     text-shadow: none;
+    font-style: italic;
+    font-weight: 700;
   }
 }
