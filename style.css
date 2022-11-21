@@ -10,6 +10,7 @@
 :root {
   --primary-color: #1a08a4;
   --accent-color: #5e7cea;
+  --dark-accent: rgb(89, 205, 217);
   --font-lg: 2.5rem;
   --font-med: 1.5rem;
   --font-norm: 1rem;
@@ -191,6 +192,14 @@ dark theme
 }
 .dark-theme .btn__mail--white {
   color: #242424;
+}
+.dark-theme .text--accent{
+    color: rgb(89, 205, 217);
+    text-shadow: none;
+}
+.dark-theme .nav__link--anchor-primary{
+    background-color: var(--dark-accent);
+    color: #242424;
 }
 
 /* Nav BAR */
