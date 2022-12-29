@@ -393,7 +393,6 @@ Modal
 
 .form__item--label {
   color: white;
-  padding: 1000px 0;
 }
 
 .form__submit {
@@ -756,6 +755,7 @@ Shapes
 */
 
 .shape {
+  filter: blur(.25rem);
   position: fixed;
   z-index: 0;
 }
@@ -796,6 +796,27 @@ Shapes
   left: 80vw;
 }
 
+/*  for large tablets */
+@media (max-width: 821px) {
+  .modal__half {
+    height: 100%;
+    padding: 0 30px;
+  }
+  .modal__half h3{
+    font-size: var(--font-med);
+  }
+  .modal__half h4{
+    font-size: var(--font-normal);
+  }
+  .modal__half p{
+    font-size: var(--font-small);
+  }
+
+  
+  .language__list{
+    max-height: 80px;
+  }
+}
 /*  for small phones -tablets - large smartphones */
 @media (max-width: 768px) {
   nav {
@@ -824,8 +845,8 @@ Shapes
     max-height: 80%;
   }
   .modal {
-    top: 0;
-    left: 0;
+    top: 3vh;
+    left: 3vh;
     width: 100%;
     transform: none;
     height: auto;
@@ -842,10 +863,35 @@ Shapes
     font-weight: 700;
   }
 }
+
+
+/*  midsized tablets/ phones */
+@media (max-width: 5410px) {
+.language{
+  margin: 0;
+  width: 30%;
+}
+.modal__half h3{
+  font-size: var(--font-med);
+}
+.modal__half h4{
+  font-size: var(--font-normal);
+}
+.modal__half p{
+  font-size: var(--font-small);
+}
+.language__img{
+  max-width: 45px;
+  
+}
+}
 /*  smaller phones */
 @media (max-width: 480px) {
   .nav__link:first-child {
     display: none;
+  }
+  section{
+
   }
   h1 {
     font-size: var(--font-lg);
@@ -879,7 +925,10 @@ Shapes
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
   .modal__half {
-    padding: 40px;
+    padding: 35px;
+  }
+  .fa-times{
+    padding-right: 2rem;
   }
 
   .dark-theme .text--accent{
